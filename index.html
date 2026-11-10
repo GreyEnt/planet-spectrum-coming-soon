@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Planet Spectrum — Coming Soon</title>
+<meta name="description" content="Planet Spectrum — true crime, paranormal and micro-dramas. Coming soon.">
+<meta property="og:title" content="Planet Spectrum — Coming Soon">
+<meta property="og:description" content="True crime. Paranormal. Micro-dramas. Coming soon.">
+<meta property="og:image" content="https://planetspectrum.tv/img/masthead.jpg">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.ico">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:wght@400;600&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+<style>
+  :root{--void:#050308;--bone:#f2eef6;--dim:#948ca6;--edge:rgba(242,238,246,.13);
+    --spectrum:linear-gradient(96deg,#ff2bb0 0%,#c13bff 32%,#7a55ff 58%,#22d9f0 100%)}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--void);color:var(--bone);font:16px/1.55 Archivo,system-ui,sans-serif;overflow-x:hidden}
+  a{color:inherit;text-decoration:none}
+  .mono{font-family:"Share Tech Mono",monospace;letter-spacing:.14em;text-transform:uppercase}
+  .disp{font-family:Anton,Impact,sans-serif;text-transform:uppercase;font-weight:400;line-height:.9;margin:0}
+  .tape{height:8px;background:repeating-linear-gradient(-45deg,#f2c200 0 22px,#0a0a0a 22px 44px)}
+
+  header{position:relative;min-height:180px;display:flex;justify-content:center;
+    background:url(img/masthead.jpg) center/cover}
+  header::before{content:"";position:absolute;inset:0;background:linear-gradient(to bottom,rgba(0,0,0,.1),rgba(0,0,0,.45),#000)}
+  .brand{position:relative;text-align:center;padding:26px 16px 22px;display:flex;flex-direction:column;align-items:center;gap:4px}
+  .brand img{width:96px;height:96px;filter:drop-shadow(0 0 18px rgba(154,69,255,.55))}
+  .brand .disp{font-size:20px;letter-spacing:.16em;margin-top:4px}
+  .brand .mono{font-size:12px;color:var(--dim);letter-spacing:.34em}
+
+  .hero{position:relative;text-align:center;padding:72px 16px 64px;isolation:isolate}
+  .hero::before{content:"";position:absolute;inset:0;z-index:-1;opacity:.22;
+    background:url(img/crimeboard.jpg) center/cover}
+  .hero::after{content:"";position:absolute;inset:0;z-index:-1;background:radial-gradient(ellipse at center,rgba(5,3,8,.2),var(--void) 75%)}
+  .kicker{font-size:13px;color:var(--dim)}
+  h1{font-size:clamp(64px,15vw,168px);margin:14px 0 18px;background:var(--spectrum);-webkit-background-clip:text;background-clip:text;color:transparent;
+    filter:drop-shadow(0 0 30px rgba(193,59,255,.25))}
+  .lede{max-width:52ch;margin:0 auto;color:#c6bfd4;font-size:18px}
+  .genres{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin:28px 0 0}
+  .genres span{border:1px solid var(--edge);border-radius:999px;padding:6px 14px;font-size:12px}
+
+  .reel{display:flex;gap:14px;overflow:hidden;padding:8px 0 56px;mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
+  .track{display:flex;gap:14px;animation:drift 60s linear infinite;flex-shrink:0}
+  .track img{width:280px;aspect-ratio:16/9;object-fit:cover;border-radius:9px;border:1px solid var(--edge)}
+  @keyframes drift{to{transform:translateX(calc(-100% - 14px))}}
+  @media (prefers-reduced-motion:reduce){.track{animation:none}}
+
+  .follow{text-align:center;padding:40px 16px 56px}
+  .follow h2{font-size:clamp(28px,5vw,44px);margin-bottom:20px}
+  .socials{display:flex;flex-wrap:wrap;justify-content:center;gap:12px}
+  .socials a{border:1px solid var(--edge);border-radius:9px;padding:12px 20px;font-size:13px;transition:.2s}
+  .socials a:hover{border-color:#ff2bb0;box-shadow:0 0 18px rgba(255,43,176,.35)}
+  footer{text-align:center;padding:22px 16px 32px;color:var(--dim);font-size:12px}
+  @media (max-width:520px){.track img{width:200px}.lede{font-size:16px}}
+</style>
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <img src="img/logo.png" alt="Planet Spectrum">
+      <span class="disp">Planet</span>
+      <span class="mono">Spectrum</span>
+    </div>
+  </header>
+  <div class="tape"></div>
+
+  <section class="hero">
+    <div class="mono kicker">Transmission incoming</div>
+    <h1 class="disp">Coming Soon</h1>
+    <p class="lede">True crime, the paranormal and micro-dramas you can't look away from. A new streaming home is almost here.</p>
+    <div class="genres mono">
+      <span>True Crime</span><span>Paranormal</span><span>UFO</span><span>Micro Series</span>
+    </div>
+  </section>
+
+  <div class="reel" aria-hidden="true">
+    <div class="track">
+      <img src="img/devil-rides-shotgun-ep1.jpg" alt=""><img src="img/the-ceiling.jpg" alt=""><img src="img/wheeling-dead.jpg" alt=""><img src="img/alien-brazil-part1.jpg" alt=""><img src="img/mr-james.jpg" alt=""><img src="img/devil-rides-shotgun-ep6.jpg" alt="">
+    </div>
+    <div class="track">
+      <img src="img/devil-rides-shotgun-ep1.jpg" alt=""><img src="img/the-ceiling.jpg" alt=""><img src="img/wheeling-dead.jpg" alt=""><img src="img/alien-brazil-part1.jpg" alt=""><img src="img/mr-james.jpg" alt=""><img src="img/devil-rides-shotgun-ep6.jpg" alt="">
+    </div>
+  </div>
+
+  <div class="tape"></div>
+  <section class="follow">
+    <h2 class="disp">Follow the signal</h2>
+    <div class="socials mono">
+      <a href="https://www.tiktok.com/@planet_spectrum" target="_blank" rel="noopener">TikTok</a>
+      <a href="https://www.instagram.com/planet_spectrum/" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://www.youtube.com/@Planet_Spectrum" target="_blank" rel="noopener">YouTube</a>
+      <a href="https://x.com/planet_spe39777" target="_blank" rel="noopener">X</a>
+    </div>
+  </section>
+  <footer class="mono">© 2026 Planet Spectrum</footer>
+</body>
+</html>
